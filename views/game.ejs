@@ -7,6 +7,42 @@
   <body>
     <h1><%= gamePage %></h1>
     <p>Welcome to <%= gamePage %></p>
-    <a href="../"><%=gamePage%>></a>
+
+    <!-- entrance view -->
+    <div class="login panel" id='login'>
+        <div class="form-group">
+          <input class="in" id="username" placeholder="Entre your name here" maxlength="15" autofocus>
+          <button class="btn btn-play" id="login" onclick="login();">Start!</button>
+        </div>
+        <hr class="separator">
+        <div>    
+          <a href="../">Back to home</a>
+        </div>
+    </div>
+
+
+    <!-- plaYer list for choose -->
+    <div class="lobby panel" id='lobby'>
+        <div class="header">
+          <h1 class="panel-title">Choos who you want to play with </h1>
+        </div>
+          
+        <div class="ol">
+          <h3 class="text-head">Online Players</h3>
+          <div class="list" id='userList'>
+          </div>
+        </div>
+        
+        <hr class="separator">
+        <div>    
+            <a href="../">Back to home</a>
+        </div>
+    </div>     
+    
+    <!-- load in game functions -->
+    <script type="text/javascript" src="/client/js/reversi.js"></script>
+    <script type="text/javascript" src="/client/js/default.js"></script>
+    <script type="text/javascript" src="/client/js/functions.js"></script>
+
   </body>
 </html>
